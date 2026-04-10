@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "WebAplicationAPIRestDemo.Controllers.CharactersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Characters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
