@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\persistence\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\persistence\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\model\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\model\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\service\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\apiprojecte.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\apiprojecte.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\apiprojecte.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Model\\Character.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Model\\Character.cs",
@@ -74,12 +74,11 @@
               "RelativeToolTip": "APIProjecte\\DAL\\Model\\Character.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T08:37:50.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T08:37:50.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CharacterService.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\CharacterService.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Service\\CharacterService.cs",
@@ -91,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "APIProjecte\\Properties\\launchSettings.json",
@@ -103,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DbContext.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Persistence\\DbContext.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Persistence\\DbContext.cs",
@@ -116,25 +115,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "APIProjecte.http",
-              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\APIProjecte.http",
-              "RelativeDocumentMoniker": "APIProjecte\\APIProjecte.http",
-              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\APIProjecte.http",
-              "RelativeToolTip": "APIProjecte\\APIProjecte.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-04-07T17:56:25.677Z"
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\appsettings.json",
+              "RelativeDocumentMoniker": "APIProjecte\\appsettings.json",
+              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\appsettings.json",
+              "RelativeToolTip": "APIProjecte\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-07T17:58:12.072Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Program.cs",
               "RelativeDocumentMoniker": "APIProjecte\\Program.cs",
               "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Program.cs",
               "RelativeToolTip": "APIProjecte\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T17:48:51.269Z",
               "EditorCaption": ""
@@ -146,14 +146,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\appsettings.json",
-              "RelativeDocumentMoniker": "APIProjecte\\appsettings.json",
-              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\appsettings.json",
-              "RelativeToolTip": "APIProjecte\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-07T17:58:12.072Z"
+              "Title": "APIProjecte.http",
+              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\APIProjecte.http",
+              "RelativeDocumentMoniker": "APIProjecte\\APIProjecte.http",
+              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\APIProjecte.http",
+              "RelativeToolTip": "APIProjecte\\APIProjecte.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-04-07T17:56:25.677Z"
             },
             {
               "$type": "Document",
