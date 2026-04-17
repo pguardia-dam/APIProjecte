@@ -8,5 +8,37 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
+    "Method": "GetSkillsByCharacter",
+    "RelativePath": "api/Skills/character/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
+    "Method": "GetEquippedSkills",
+    "RelativePath": "api/Skills/equipped/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

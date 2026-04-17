@@ -1,6 +1,7 @@
 ﻿using APIProjecte.DAL.Model;
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
+using System.Data;
 using WebAplicationAPIRestDemo.DAL.Model;
 
 namespace WebAplicationAPIRestDemo.DAL.Service
@@ -29,14 +30,15 @@ namespace WebAplicationAPIRestDemo.DAL.Service
                             result.Add(new Skill
                             {
                                 idSkill = reader.GetInt32("idSkill"),
-                                nameSkill = reader.GetString("nameSkill"),
-                                descriptionSkill = reader.GetString("descriptionSkill"),
-                                baseDamageSkill = reader.GetInt32("baseDamageSkill"),
-                                energyCostSkill = reader.GetInt32("energyCostSkill"),
-                                dotSkill = reader.GetInt32("dotSkill"),
-                                isUnlockedSkill = reader.GetBoolean("isUnlockedSkill"),
-                                skillTreePathSkill = reader.GetInt32("skillTreePathSkill"),
+                                nameSkill = reader.IsDBNull("nameSkill") ? "nullAPIBuilder" : reader.GetString("nameSkill"),
+                                descriptionSkill = reader.IsDBNull("descriptionSkill") ? "nullAPIBuilder" : reader.GetString("descriptionSkill"),
+                                baseDamageSkill = reader.IsDBNull("baseDamageSkill") ? 0 : reader.GetInt32("baseDamageSkill"),
+                                energyCostSkill = reader.IsDBNull("energyCostSkill") ? 0 : reader.GetInt32("energyCostSkill"),
+                                dotSkill = reader.IsDBNull("dotSkill") ? 0 : reader.GetInt32("dotSkill"),
+                                isUnlockedSkill = reader.IsDBNull("isUnlockedSkill") ? false : reader.GetBoolean("isUnlockedSkill"),
+                                skillTreePathSkill = reader.IsDBNull("skillTreePathSkill") ? 0 : reader.GetInt32("skillTreePathSkill"),
                                 characterIdSkill = reader.GetInt32("characterIdSkill")
+
                             });
                         }
                     }
@@ -72,14 +74,15 @@ namespace WebAplicationAPIRestDemo.DAL.Service
                             result.Add(new Skill
                             {
                                 idSkill = reader.GetInt32("idSkill"),
-                                nameSkill = reader.GetString("nameSkill"),
-                                descriptionSkill = reader.GetString("descriptionSkill"),
-                                baseDamageSkill = reader.GetInt32("baseDamageSkill"),
-                                energyCostSkill = reader.GetInt32("energyCostSkill"),
-                                dotSkill = reader.GetInt32("dotSkill"),
-                                isUnlockedSkill = reader.GetBoolean("isUnlockedSkill"),
-                                skillTreePathSkill = reader.GetInt32("skillTreePathSkill"),
+                                nameSkill = reader.IsDBNull("nameSkill") ? "nullAPIBuilder" : reader.GetString("nameSkill"),
+                                descriptionSkill = reader.IsDBNull("descriptionSkill") ? "nullAPIBuilder" : reader.GetString("descriptionSkill"),
+                                baseDamageSkill = reader.IsDBNull("baseDamageSkill") ? 0 : reader.GetInt32("baseDamageSkill"),
+                                energyCostSkill = reader.IsDBNull("energyCostSkill") ? 0 : reader.GetInt32("energyCostSkill"),
+                                dotSkill = reader.IsDBNull("dotSkill") ? 0 : reader.GetInt32("dotSkill"),
+                                isUnlockedSkill = reader.IsDBNull("isUnlockedSkill") ? false : reader.GetBoolean("isUnlockedSkill"),
+                                skillTreePathSkill = reader.IsDBNull("skillTreePathSkill") ? 0 : reader.GetInt32("skillTreePathSkill"),
                                 characterIdSkill = reader.GetInt32("characterIdSkill")
+
                             });
                         }
                     }
