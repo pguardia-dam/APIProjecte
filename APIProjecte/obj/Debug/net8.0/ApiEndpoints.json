@@ -40,5 +40,53 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIProjecte.Controllers.UsersController",
+    "Method": "Exists",
+    "RelativePath": "api/Users/exists/{mail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIProjecte.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "api/Users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginData",
+        "Type": "APIProjecte.DAL.Model.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIProjecte.Controllers.UsersController",
+    "Method": "Register",
+    "RelativePath": "api/Users/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newUser",
+        "Type": "APIProjecte.DAL.Model.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

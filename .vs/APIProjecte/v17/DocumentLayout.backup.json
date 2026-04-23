@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\persistence\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\persistence\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\service\\skillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\service\\skillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\controllers\\characterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\service\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\service\\characterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\persistence\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|solutionrelative:apiprojecte\\dal\\persistence\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4EA404B0-9B6A-49DA-9B01-0F80DEEB3DC7}|APIProjecte\\APIProjecte.csproj|c:\\users\\paugu\\desktop\\!dam2\\!final\\api\\apipuntuacio\\apiprojecte\\apiprojecte\\apiprojecte\\dal\\model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +98,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "APIProjecte\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "APIProjecte\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T17:33:58.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "APIProjecte\\DAL\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\UserService.cs",
+              "RelativeToolTip": "APIProjecte\\DAL\\Service\\UserService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T17:32:54.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "EquippedSkill.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Model\\EquippedSkill.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Model\\EquippedSkill.cs",
@@ -94,12 +132,11 @@
               "RelativeToolTip": "APIProjecte\\DAL\\Model\\EquippedSkill.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:18:10.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T14:18:10.857Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Skill.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Model\\Skill.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Model\\Skill.cs",
@@ -107,25 +144,50 @@
               "RelativeToolTip": "APIProjecte\\DAL\\Model\\Skill.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:17:52.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T14:17:52.591Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "SkillService.cs",
+              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\SkillService.cs",
+              "RelativeDocumentMoniker": "APIProjecte\\DAL\\Service\\SkillService.cs",
+              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\SkillService.cs",
+              "RelativeToolTip": "APIProjecte\\DAL\\Service\\SkillService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T14:18:53.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DbContext.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Persistence\\DbContext.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Persistence\\DbContext.cs",
               "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Persistence\\DbContext.cs",
               "RelativeToolTip": "APIProjecte\\DAL\\Persistence\\DbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T17:57:46.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Model\\User.cs",
+              "RelativeDocumentMoniker": "APIProjecte\\DAL\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Model\\User.cs",
+              "RelativeToolTip": "APIProjecte\\DAL\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T17:37:19.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CharacterService.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\CharacterService.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Service\\CharacterService.cs",
@@ -133,25 +195,11 @@
               "RelativeToolTip": "APIProjecte\\DAL\\Service\\CharacterService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwCcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T17:59:33.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T17:59:33.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SkillService.cs",
-              "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\SkillService.cs",
-              "RelativeDocumentMoniker": "APIProjecte\\DAL\\Service\\SkillService.cs",
-              "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\SkillService.cs",
-              "RelativeToolTip": "APIProjecte\\DAL\\Service\\SkillService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwBwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:18:53.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CharactersController.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Controllers\\CharactersController.cs",
               "RelativeDocumentMoniker": "APIProjecte\\Controllers\\CharactersController.cs",
@@ -159,12 +207,11 @@
               "RelativeToolTip": "APIProjecte\\Controllers\\CharactersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T17:55:16.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T17:55:16.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Model\\Character.cs",
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Model\\Character.cs",
@@ -172,12 +219,11 @@
               "RelativeToolTip": "APIProjecte\\DAL\\Model\\Character.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T08:37:50.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T08:37:50.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "SkillsController.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Controllers\\SkillsController.cs",
               "RelativeDocumentMoniker": "APIProjecte\\Controllers\\SkillsController.cs",
@@ -185,12 +231,11 @@
               "RelativeToolTip": "APIProjecte\\Controllers\\SkillsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:24:20.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T14:24:20.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Program.cs",
               "RelativeDocumentMoniker": "APIProjecte\\Program.cs",
@@ -202,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\appsettings.json",
               "RelativeDocumentMoniker": "APIProjecte\\appsettings.json",
@@ -214,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "APIProjecte\\Properties\\launchSettings.json",
@@ -226,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "APIProjecte.http",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\APIProjecte.http",
               "RelativeDocumentMoniker": "APIProjecte\\APIProjecte.http",
@@ -238,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "APIProjecte.csproj",
               "DocumentMoniker": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\APIProjecte.csproj",
               "RelativeDocumentMoniker": "APIProjecte\\APIProjecte.csproj",
