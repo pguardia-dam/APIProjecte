@@ -27,6 +27,43 @@
   },
   {
     "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
+    "Method": "EquipSkill",
+    "RelativePath": "api/Skills/equip",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "APIProjecte.DAL.Model.EquipSkillDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
+    "Method": "UnequipSkill",
+    "RelativePath": "api/Skills/equip/{characterId}/{slot}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "characterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "slot",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
     "Method": "GetEquippedSkills",
     "RelativePath": "api/Skills/equipped/{id}",
     "HttpMethod": "GET",

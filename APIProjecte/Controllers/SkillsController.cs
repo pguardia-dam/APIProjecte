@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using APIProjecte.DAL.Model;
+using Microsoft.AspNetCore.Mvc;
 using WebAplicationAPIRestDemo.DAL.Service;
 
 namespace WebAplicationAPIRestDemo.Controllers
@@ -9,20 +10,44 @@ namespace WebAplicationAPIRestDemo.Controllers
     {
         private readonly SkillService _service = new SkillService();
 
-        // Totes les habilitats del personatge
         [HttpGet("character/{id}")]
         public IActionResult GetSkillsByCharacter(int id)
         {
-            var skills = _service.GetSkillsByCharacterId(id);
-            return Ok(skills);
+            return Ok(_service.GetSkillsByCharacterId(id));
         }
 
-        // Només les habilitats equipades (les 4 del combat)
         [HttpGet("equipped/{id}")]
         public IActionResult GetEquippedSkills(int id)
         {
-            var skills = _service.GetEquippedSkills(id);
-            return Ok(skills);
+            return Ok(_service.GetEquippedSkills(id));
+        }
+
+        // -----------------------------
+        // EQUIPAR UNA HABILITAT
+        // -----------------------------
+        [HttpPost("equip")]
+        public IActionResult EquipSkill([FromBody] EquipSkillDTO data)
+        {
+            bool ok = _service.EquipSkill(data.characterId, data.skillId, data.slot);
+
+            if (!ok)
+                return BadRequest(new { message = "No s'ha pogut equipar l'habilitat" });
+
+            return Ok(new { message = "Habilitat equipada correctament" });
+        }
+
+        // -----------------------------
+        // DES-EQUIPAR UNA HABILITAT
+        // -----------------------------
+        [HttpDelete("equip/{characterId}/{slot}")]
+        public IActionResult UnequipSkill(int characterId, int slot)
+        {
+            bool ok = _service.UnequipSkill(characterId, slot);
+
+            if (!ok)
+                return BadRequest(new { message = "No s'ha pogut des-equipar l'habilitat" });
+
+            return Ok(new { message = "Habilitat des-equipada" });
         }
     }
 }
