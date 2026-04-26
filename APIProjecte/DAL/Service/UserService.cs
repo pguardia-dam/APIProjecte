@@ -76,5 +76,36 @@ namespace WebAplicationAPIRestDemo.DAL.Service
                 }
             }
         }
+
+        public User Login(string mail, string password)
+        {
+            using (var conn = DbContext.GetInstance())
+            {
+                string query = "SELECT userID, mail, password FROM User WHERE mail = @mail AND password = @pass";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@mail", mail);
+                    cmd.Parameters.AddWithValue("@pass", password);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new User
+                            {
+                                userID = reader.GetInt32("userID"),
+                                mail = reader.GetString("mail"),
+                                password = reader.GetString("password")
+                            };
+                        }
+                    }
+                }
+            }
+
+            return null;
+        }
+
+
     }
 }

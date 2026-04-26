@@ -16,12 +16,16 @@ namespace APIProjecte.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] User loginData)
+        public IActionResult Login([FromBody] LoginDTO dto)
         {
-            var user = _userService.GetUser(loginData.mail, loginData.password);
+            var user = _userService.Login(dto.mail, dto.password);
 
             if (user == null)
                 return Unauthorized(new { message = "Credencials incorrectes" });
+
+            // Inicialitzar habilitats base
+            var skillService = new SkillService();
+            skillService.InitializeUserSkills(user.userID);
 
             return Ok(user);
         }

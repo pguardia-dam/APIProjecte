@@ -35,7 +35,7 @@ namespace WebAplicationAPIRestDemo.Controllers
 
             return Ok(new { message = "Habilitat equipada correctament" });
         }
-
+    
         // Des-equipar habilitat
         [HttpDelete("equip/{userId}/{characterId}/{slot}")]
         public IActionResult UnequipSkill(int userId, int characterId, int slot)

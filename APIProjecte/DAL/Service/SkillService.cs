@@ -151,5 +151,60 @@ namespace WebAplicationAPIRestDemo.DAL.Service
                 }
             }
         }
+
+        // ---------------------------------------------------------
+        // EQUIPAR HABILITATS BASE AL FER EL PRIMER LOGIN
+        // ---------------------------------------------------------
+        public void InitializeUserSkills(int userId)
+        {
+            using (var conn = DbContext.GetInstance())
+            {
+                // Comprovar si ja té habilitats equipades
+                string checkQuery = "SELECT COUNT(*) FROM EquippedSkills WHERE UserId = @user";
+
+                using (var checkCmd = new MySqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("@user", userId);
+                    long count = (long)checkCmd.ExecuteScalar();
+
+                    if (count > 0)
+                        return; // Ja té habilitats → no fem res
+                }
+
+                // Si no té habilitats → assignem les base
+                var baseSkills = new Dictionary<int, int[]>
+        {
+            { 1, new int[] { 1, 2, 3, 4 } },
+            { 2, new int[] { 10, 11, 12, 13 } },
+            { 3, new int[] { 5, 6, 17, 7 } },
+            { 4, new int[] { 9, 14, 15, 16 } }
+        };
+
+                foreach (var entry in baseSkills)
+                {
+                    int characterId = entry.Key;
+                    int[] skills = entry.Value;
+
+                    for (int slot = 0; slot < skills.Length; slot++)
+                    {
+                        string insertQuery =
+                            "INSERT INTO EquippedSkills (UserId, CharacterIdEQ, SkillIdEQ, skillPosition) " +
+                            "VALUES (@user, @char, @skill, @slot)";
+
+                        using (var insertCmd = new MySqlCommand(insertQuery, conn))
+                        {
+                            insertCmd.Parameters.AddWithValue("@user", userId);
+                            insertCmd.Parameters.AddWithValue("@char", characterId);
+                            insertCmd.Parameters.AddWithValue("@skill", skills[slot]);
+                            insertCmd.Parameters.AddWithValue("@slot", slot + 1);
+
+                            insertCmd.ExecuteNonQuery();
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }
