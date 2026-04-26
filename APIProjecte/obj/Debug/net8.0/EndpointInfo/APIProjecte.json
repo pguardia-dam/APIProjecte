@@ -17,14 +17,14 @@
         }
       }
     },
-    "/api/Skills/character/{id}": {
+    "/api/Skills/character/{characterId}": {
       "get": {
         "tags": [
           "Skills"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "characterId",
             "in": "path",
             "required": true,
             "schema": {
@@ -40,14 +40,23 @@
         }
       }
     },
-    "/api/Skills/equipped/{id}": {
+    "/api/Skills/equipped/{userId}/{characterId}": {
       "get": {
         "tags": [
           "Skills"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "characterId",
             "in": "path",
             "required": true,
             "schema": {
@@ -94,12 +103,21 @@
         }
       }
     },
-    "/api/Skills/equip/{characterId}/{slot}": {
+    "/api/Skills/equip/{userId}/{characterId}/{slot}": {
       "delete": {
         "tags": [
           "Skills"
         ],
         "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
           {
             "name": "characterId",
             "in": "path",
@@ -215,20 +233,6 @@
     "schemas": {
       "EquipSkillDTO": {
         "type": "object",
-        "properties": {
-          "characterId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "skillId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "slot": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
         "additionalProperties": false
       },
       "User": {

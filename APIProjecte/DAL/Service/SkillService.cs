@@ -2,12 +2,14 @@
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Data;
-using WebAplicationAPIRestDemo.DAL.Model;
 
 namespace WebAplicationAPIRestDemo.DAL.Service
 {
     public class SkillService
     {
+        // ---------------------------------------------------------
+        // TOTES LES HABILITATS DISPONIBLES PER UN PERSONATGE
+        // ---------------------------------------------------------
         public List<Skill> GetSkillsByCharacterId(int characterId)
         {
             var result = new List<Skill>();
@@ -38,7 +40,6 @@ namespace WebAplicationAPIRestDemo.DAL.Service
                                 isUnlockedSkill = reader.IsDBNull("isUnlockedSkill") ? false : reader.GetBoolean("isUnlockedSkill"),
                                 skillTreePathSkill = reader.IsDBNull("skillTreePathSkill") ? 0 : reader.GetInt32("skillTreePathSkill"),
                                 characterIdSkill = reader.GetInt32("characterIdSkill")
-
                             });
                         }
                     }
@@ -48,56 +49,10 @@ namespace WebAplicationAPIRestDemo.DAL.Service
             return result;
         }
 
-        public bool EquipSkill(int characterId, int skillId, int slot)
-        {
-            using (var conn = DbContext.GetInstance())
-            {
-                // 1. Esborrem si ja hi ha una habilitat en aquest slot
-                string deleteQuery =
-                    "DELETE FROM EquippedSkills WHERE CharacterIdEQ = @char AND skillPosition = @slot";
-
-                using (var deleteCmd = new MySqlCommand(deleteQuery, conn))
-                {
-                    deleteCmd.Parameters.AddWithValue("@char", characterId);
-                    deleteCmd.Parameters.AddWithValue("@slot", slot);
-                    deleteCmd.ExecuteNonQuery();
-                }
-
-                // 2. Inserim la nova habilitat
-                string insertQuery =
-                    "INSERT INTO EquippedSkills (CharacterIdEQ, SkillIdEQ, skillPosition) " +
-                    "VALUES (@char, @skill, @slot)";
-
-                using (var insertCmd = new MySqlCommand(insertQuery, conn))
-                {
-                    insertCmd.Parameters.AddWithValue("@char", characterId);
-                    insertCmd.Parameters.AddWithValue("@skill", skillId);
-                    insertCmd.Parameters.AddWithValue("@slot", slot);
-
-                    return insertCmd.ExecuteNonQuery() > 0;
-                }
-            }
-        }
-
-        public bool UnequipSkill(int characterId, int slot)
-        {
-            using (var conn = DbContext.GetInstance())
-            {
-                string query =
-                    "DELETE FROM EquippedSkills WHERE CharacterIdEQ = @char AND skillPosition = @slot";
-
-                using (var cmd = new MySqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@char", characterId);
-                    cmd.Parameters.AddWithValue("@slot", slot);
-
-                    return cmd.ExecuteNonQuery() > 0;
-                }
-            }
-        }
-
-
-        public List<Skill> GetEquippedSkills(int characterId)
+        // ---------------------------------------------------------
+        // HABILITATS EQUIPADES PER UN USUARI I PERSONATGE
+        // ---------------------------------------------------------
+        public List<Skill> GetEquippedSkills(int userId, int characterId)
         {
             var result = new List<Skill>();
 
@@ -108,12 +63,13 @@ namespace WebAplicationAPIRestDemo.DAL.Service
                     "s.energyCostSkill, s.dotSkill, s.isUnlockedSkill, s.skillTreePathSkill, s.characterIdSkill " +
                     "FROM Skill s " +
                     "JOIN EquippedSkills eq ON s.idSkill = eq.SkillIdEQ " +
-                    "WHERE eq.CharacterIdEQ = @id " +
+                    "WHERE eq.UserId = @user AND eq.CharacterIdEQ = @char " +
                     "ORDER BY eq.skillPosition ASC";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@id", characterId);
+                    cmd.Parameters.AddWithValue("@user", userId);
+                    cmd.Parameters.AddWithValue("@char", characterId);
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -130,7 +86,6 @@ namespace WebAplicationAPIRestDemo.DAL.Service
                                 isUnlockedSkill = reader.IsDBNull("isUnlockedSkill") ? false : reader.GetBoolean("isUnlockedSkill"),
                                 skillTreePathSkill = reader.IsDBNull("skillTreePathSkill") ? 0 : reader.GetInt32("skillTreePathSkill"),
                                 characterIdSkill = reader.GetInt32("characterIdSkill")
-
                             });
                         }
                     }
@@ -138,6 +93,63 @@ namespace WebAplicationAPIRestDemo.DAL.Service
             }
 
             return result;
+        }
+
+        // ---------------------------------------------------------
+        // EQUIPAR UNA HABILITAT
+        // ---------------------------------------------------------
+        public bool EquipSkill(int userId, int characterId, int skillId, int slot)
+        {
+            using (var conn = DbContext.GetInstance())
+            {
+                // 1. Esborrem la que hi ha al slot
+                string deleteQuery =
+                    "DELETE FROM EquippedSkills WHERE UserId = @user AND CharacterIdEQ = @char AND skillPosition = @slot";
+
+                using (var deleteCmd = new MySqlCommand(deleteQuery, conn))
+                {
+                    deleteCmd.Parameters.AddWithValue("@user", userId);
+                    deleteCmd.Parameters.AddWithValue("@char", characterId);
+                    deleteCmd.Parameters.AddWithValue("@slot", slot);
+                    deleteCmd.ExecuteNonQuery();
+                }
+
+                // 2. Inserim la nova
+                string insertQuery =
+                    "INSERT INTO EquippedSkills (UserId, CharacterIdEQ, SkillIdEQ, skillPosition) " +
+                    "VALUES (@user, @char, @skill, @slot)";
+
+                using (var insertCmd = new MySqlCommand(insertQuery, conn))
+                {
+                    insertCmd.Parameters.AddWithValue("@user", userId);
+                    insertCmd.Parameters.AddWithValue("@char", characterId);
+                    insertCmd.Parameters.AddWithValue("@skill", skillId);
+                    insertCmd.Parameters.AddWithValue("@slot", slot);
+
+                    return insertCmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        // ---------------------------------------------------------
+        // DES-EQUIPAR UNA HABILITAT
+        // ---------------------------------------------------------
+        public bool UnequipSkill(int userId, int characterId, int slot)
+        {
+            using (var conn = DbContext.GetInstance())
+            {
+                string query =
+                    "DELETE FROM EquippedSkills WHERE UserId = @user AND CharacterIdEQ = @char AND skillPosition = @slot";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@user", userId);
+                    cmd.Parameters.AddWithValue("@char", characterId);
+                    cmd.Parameters.AddWithValue("@slot", slot);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
         }
     }
 }

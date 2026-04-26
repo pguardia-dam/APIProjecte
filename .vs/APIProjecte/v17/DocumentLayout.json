@@ -104,7 +104,7 @@
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Model\\EquipSkillDTO.cs",
               "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Model\\EquipSkillDTO.cs",
               "RelativeToolTip": "APIProjecte\\DAL\\Model\\EquipSkillDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-23T14:23:04.451Z",
               "EditorCaption": ""
@@ -119,8 +119,7 @@
               "RelativeToolTip": "APIProjecte\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T17:33:58.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T17:33:58.329Z"
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "APIProjecte\\DAL\\Model\\EquippedSkill.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:18:10.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T14:18:10.857Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "APIProjecte\\DAL\\Model\\Skill.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T14:17:52.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T14:17:52.591Z"
             },
             {
               "$type": "Document",
@@ -156,7 +153,7 @@
               "RelativeDocumentMoniker": "APIProjecte\\DAL\\Service\\SkillService.cs",
               "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\DAL\\Service\\SkillService.cs",
               "RelativeToolTip": "APIProjecte\\DAL\\Service\\SkillService.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAUwE4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAADwv1MAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T14:18:53.006Z",
               "EditorCaption": ""
@@ -169,7 +166,7 @@
               "RelativeDocumentMoniker": "APIProjecte\\Controllers\\SkillsController.cs",
               "ToolTip": "C:\\Users\\paugu\\Desktop\\!DAM2\\!final\\api\\APIPuntuacio\\APIProjecte\\APIProjecte\\APIProjecte\\Controllers\\SkillsController.cs",
               "RelativeToolTip": "APIProjecte\\Controllers\\SkillsController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAywCgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T14:24:20.001Z",
               "EditorCaption": ""

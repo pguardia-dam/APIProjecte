@@ -12,13 +12,13 @@
   {
     "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
     "Method": "GetSkillsByCharacter",
-    "RelativePath": "api/Skills/character/{id}",
+    "RelativePath": "api/Skills/character/{characterId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "characterId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -44,11 +44,16 @@
   {
     "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
     "Method": "UnequipSkill",
-    "RelativePath": "api/Skills/equip/{characterId}/{slot}",
+    "RelativePath": "api/Skills/equip/{userId}/{characterId}/{slot}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "characterId",
         "Type": "System.Int32",
@@ -65,13 +70,18 @@
   {
     "ContainingType": "WebAplicationAPIRestDemo.Controllers.SkillsController",
     "Method": "GetEquippedSkills",
-    "RelativePath": "api/Skills/equipped/{id}",
+    "RelativePath": "api/Skills/equipped/{userId}/{characterId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "characterId",
         "Type": "System.Int32",
         "IsRequired": true
       }

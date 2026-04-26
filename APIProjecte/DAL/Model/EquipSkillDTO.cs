@@ -2,8 +2,10 @@
 {
     public class EquipSkillDTO
     {
-        public int characterId { get; set; }
-        public int skillId { get; set; }
-        public int slot { get; set; }
+        public int userId;
+        public int characterId;
+        public int skillId;
+        public int slot;
     }
+
 }

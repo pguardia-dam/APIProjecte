@@ -10,25 +10,25 @@ namespace WebAplicationAPIRestDemo.Controllers
     {
         private readonly SkillService _service = new SkillService();
 
-        [HttpGet("character/{id}")]
-        public IActionResult GetSkillsByCharacter(int id)
+        // Totes les habilitats disponibles per un personatge
+        [HttpGet("character/{characterId}")]
+        public IActionResult GetSkillsByCharacter(int characterId)
         {
-            return Ok(_service.GetSkillsByCharacterId(id));
+            return Ok(_service.GetSkillsByCharacterId(characterId));
         }
 
-        [HttpGet("equipped/{id}")]
-        public IActionResult GetEquippedSkills(int id)
+        // Habilitats equipades per un usuari i personatge
+        [HttpGet("equipped/{userId}/{characterId}")]
+        public IActionResult GetEquippedSkills(int userId, int characterId)
         {
-            return Ok(_service.GetEquippedSkills(id));
+            return Ok(_service.GetEquippedSkills(userId, characterId));
         }
 
-        // -----------------------------
-        // EQUIPAR UNA HABILITAT
-        // -----------------------------
+        // Equipar habilitat
         [HttpPost("equip")]
         public IActionResult EquipSkill([FromBody] EquipSkillDTO data)
         {
-            bool ok = _service.EquipSkill(data.characterId, data.skillId, data.slot);
+            bool ok = _service.EquipSkill(data.userId, data.characterId, data.skillId, data.slot);
 
             if (!ok)
                 return BadRequest(new { message = "No s'ha pogut equipar l'habilitat" });
@@ -36,13 +36,11 @@ namespace WebAplicationAPIRestDemo.Controllers
             return Ok(new { message = "Habilitat equipada correctament" });
         }
 
-        // -----------------------------
-        // DES-EQUIPAR UNA HABILITAT
-        // -----------------------------
-        [HttpDelete("equip/{characterId}/{slot}")]
-        public IActionResult UnequipSkill(int characterId, int slot)
+        // Des-equipar habilitat
+        [HttpDelete("equip/{userId}/{characterId}/{slot}")]
+        public IActionResult UnequipSkill(int userId, int characterId, int slot)
         {
-            bool ok = _service.UnequipSkill(characterId, slot);
+            bool ok = _service.UnequipSkill(userId, characterId, slot);
 
             if (!ok)
                 return BadRequest(new { message = "No s'ha pogut des-equipar l'habilitat" });
