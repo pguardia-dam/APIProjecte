@@ -113,8 +113,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "loginData",
-        "Type": "APIProjecte.DAL.Model.User",
+        "Name": "dto",
+        "Type": "APIProjecte.DAL.Model.LoginDTO",
         "IsRequired": true
       }
     ],
@@ -130,7 +130,7 @@
     "Parameters": [
       {
         "Name": "newUser",
-        "Type": "APIProjecte.DAL.Model.User",
+        "Type": "APIProjecte.DAL.Model.UserLogin",
         "IsRequired": true
       }
     ],

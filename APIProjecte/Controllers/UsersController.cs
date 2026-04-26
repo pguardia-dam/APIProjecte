@@ -23,7 +23,6 @@ namespace APIProjecte.Controllers
             if (user == null)
                 return Unauthorized(new { message = "Credencials incorrectes" });
 
-            // Inicialitzar habilitats base
             var skillService = new SkillService();
             skillService.InitializeUserSkills(user.userID);
 
@@ -31,10 +30,10 @@ namespace APIProjecte.Controllers
         }
 
         [HttpPost("register")]
-        public IActionResult Register([FromBody] User newUser)
+        public IActionResult Register([FromBody] UserLogin newUser)
         {
             if (_userService.UserExists(newUser.mail))
-                return BadRequest(new { message = "El correu ja esta registrat" });
+                return BadRequest(new { message = "El correu ja està registrat" });
 
             bool created = _userService.CreateUser(newUser.mail, newUser.password);
 
